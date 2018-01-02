@@ -8,6 +8,8 @@ of 50 scatter points.
 
 Author: Nicolas P. Rougier
 """
+
+# going to use this for learning. Thanks Nicolas!
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
