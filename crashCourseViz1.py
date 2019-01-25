@@ -1,10 +1,9 @@
 #from Python Crash Course, by Eric Matthes, Chap 16
 import csv
+from matplotlib import pyplot as plt
 
 #get high temps from file
 filename = 'sitka_weather_07-2014.csv'
-
-
 
 with open(filename) as f:
     reader = csv.reader(f)
@@ -16,12 +15,27 @@ with open(filename) as f:
 # for index, column_header in enumerate(header_row):
 # #     print(index, column_header)
 
-# page 352
-    highs = []
+# # page 352
+#     highs = []
+#     for row in reader:
+#         # highs.append(row[1])
+#         # now let's convert the strings to ints for matplot lib reading
+#         high = int(row[1])
+#         highs.append(high)
+#     print(highs)
+
+# so here i'll try to print the mean humidity
+    water = []
     for row in reader:
-        # highs.append(row[1])
-        # now let's convert the strings to ints for matplot lib reading
-        high = int(row[1])
-        highs.append(high)
-    print(highs)
+        moist = int(row[7])
+        water.append(moist)
+    # print(water)
+
+# now work on plotting it
+fig = plt.figure(dpi=128, figsize=(10,6))
+plt.plot(water, c='red')
+
+plt.show()
+
+
 
