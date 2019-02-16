@@ -1,3 +1,5 @@
+# plotly example from https://plot.ly/products/dash/
+
 import dash
 from dash.dependencies import Input, Output
 import dash_core_components as dcc
