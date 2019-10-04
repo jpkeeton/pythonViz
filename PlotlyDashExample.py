@@ -28,6 +28,7 @@ app.layout = html.Div([
             {'label': 'Tesla', 'value': 'TSLA'},
             {'label': 'Apple', 'value': 'AAPL'},
             {'label': 'Coke', 'value': 'COKE'},
+            # pull in some Sonos data to a local copy of the data
             {'label': 'Sonos', 'value': 'SONO'}
         ],
         value='TSLA'

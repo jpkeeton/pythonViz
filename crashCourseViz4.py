@@ -27,12 +27,12 @@ with open(filename) as f:
 
 
 #Here let's plot the data
-fig = plt.figure(dpi=128, figsize=(10,6))
+fig = plt.figure(dpi=128, figsize=(8,5))
 # alpha controls the color's transparency
 plt.plot(dates, highs, c='red', alpha=0.9)
 plt.plot(dates, lows, c='blue', alpha=0.9)
 # page 358, shading an area chart
-plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
+plt.fill_between(dates, highs, lows, facecolor='purple', alpha=0.9)
 
 
 

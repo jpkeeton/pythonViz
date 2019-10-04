@@ -31,7 +31,7 @@ fig = plt.figure(dpi=128, figsize=(10,6))
 plt.plot(dates, highs, c='red', alpha=0.9)
 plt.plot(dates, lows, c='blue', alpha=0.9)
 # page 358, shading an area chart
-plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
+plt.fill_between(dates, highs, lows, facecolor='black', alpha=0.01)
 
 
 
@@ -39,7 +39,7 @@ plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 # plt.title("Daily high temperatures, July 2014", fontsize=24)
 #this line, fig.autofmt.. puts diagonally to prevent overlap
 fig.autofmt_xdate()
-plt.title("Daily high and low temperatures - 2014", fontsize=24)
+plt.title("Sitka, Daily high & low temperatures - 2014", fontsize=24)
 plt.xlabel('', fontsize=16)
 plt.ylabel("Temperature (F)", fontsize=16)
 plt.tick_params(axis='both', which='major', labelsize=16)
